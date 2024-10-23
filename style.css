@@ -1,0 +1,207 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url(hbd.jpg);
+    color: #1a1a1a;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #3498db;
+}
+
+/* Table Styles */
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    background-color: rgba(255, 255, 255, 0.95); /* Kurangi transparansi */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
+
+tr:hover {
+    background-color: rgba(245, 247, 250, 0.98); /* Kurangi transparansi pada hover */
+}
+
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 0 auto 20px; /* Added margin bottom */
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Button Styles - Unified */
+.button, 
+button[type="submit"],
+.btn-back,
+a[href="index.php"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.button:hover, 
+button[type="submit"]:hover,
+.btn-back:hover,
+a[href="index.php"]:hover {
+    background-color: #2980b9;
+}
+
+/* Action Buttons Container */
+.action-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Delete Button */
+.button[href*="delete"] {
+    background-color: #e74c3c;
+}
+
+.button[href*="delete"]:hover {
+    background-color: #c0392b;
+}
+
+/* Edit Button */
+.button[href*="edit"] {
+    background-color: #27ae60;
+}
+
+.button[href*="edit"]:hover {
+    background-color: #219a52;
+}
+
+/* Back Button Specific */
+.btn-back,
+a[href="index.php"] {
+    background-color: #95a5a6;
+    margin: 20px auto;
+    display: block;
+    max-width: 200px;
+}
+
+.btn-back:hover,
+a[href="index.php"]:hover {
+    background-color: #7f8c8d;
+}
+
+/* Image Styles */
+img {
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    th, td {
+        padding: 12px;
+    }
+    
+    .button {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+    }
+    
+    .button + .button {
+        margin-left: 0;
+    }
+    
+    form {
+        padding: 15px;
+    }
+
+    .btn-back,
+    a[href="index.php"] {
+        max-width: 100%;
+        margin: 15px auto;
+    }
+}
